@@ -14,13 +14,13 @@ class Users extends React.Component {
   render() {
     return (
       <div>
-        <BlockUi 
-        tag="div" 
-        blocking={this.props.loading} 
-        loader={<Loader active type="line-scale" color="#02a17c"/>}
-        message="Please wait" 
-        keepInView>
-          <button onClick={() => this.loadUsers()}>Load Data...</button> <br/>
+        <BlockUi
+          tag="div"
+          blocking={this.props.loading}
+          loader={<Loader active type="line-scale" color="#02a17c" />}
+          message="Please wait"
+          keepInView>
+          <button onClick={() => this.loadUsers()}>Load Data...</button> <br />
           {this.renderUsers()}
         </BlockUi>
       </div>
